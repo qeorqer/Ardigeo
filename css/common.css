@@ -303,6 +303,9 @@ footer p{
 	footer{
 		text-align: center;
 	}
+	footer .logo{
+		flex-basis: 100%;
+	}
 	footer p{
 		margin-top: 15px;
 	}
