@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ardigeo</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/digitizing.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./img/faviconExample.png" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<a href="./main.html">
+					Ardigeo
+				</a>
+			</div>
+			<div class="menu__toggler">
+				<span></span>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="./main.html">Оцифровка карт</a></li>
+						<li><a href="./buildings.html" class="current__item">Оцифровка будинків</a></li>
+						<li><a href="#">Приклади робіт</a></li>
+						<li><a href="./about.html">Про нас</a></li>
+					</ul>
+				</nav>
+				<div class="theme__toggler">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+					<span>Dark</span>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<main>
+		<section class="digitizing__section">
+			<div class="wrapper">
+				<div class="digit__img">
+					<img src="img/2.jpg" alt="">
+				</div>
+				<div class="digit__text">
+					<h1>Оцифровка будинків</h1>
+					<p>Основним завдання при оцифровці будинків (як одного з підрозділів картографічної оцифровки) є:
+					відмалювання контурів реального будинку по аеро-супутниковому знімку; </p>
+					<p>заповнення атрибутивної таблиці, а саме: інформація про місцезнаходження, форму, висоту, функціональний тип (житлове, громадське і ін.) та стані (що будується, занедбане і ін.).</p>
+					<p>Відмалюванню підлягають житлові будинки, криті ангари, промислові та виробничі будівлі, будівлі сільськогосподарського призначення та ін.</p>
+				</div>
+		
+			</div>
+			
+		</section>
+		<section class="digit__order">
+			<div class="wrapper">
+				<div class="section__title"><h2>Порядок виконання робіт з оцифровки будинків</h2></div>
+				<div class="digit__steps">
+					<div class="digit__step">
+						<span class="count">1</span>
+						<p class="step__title">Експорт шару з будинками</p>
+
+						<p class="step__desc">
+							Після топологічної перевірки виконати експорт шару з будинками з формату Shape в TAB.
+						</p>
+					</div>
+					<div class="digit__step">
+						<span class="count">2</span>
+						<p class="step__title">Створення проекту в Mapinfo</p>
+						<ul class="step__desc">
+							<li>spanзавантажити космічний знімок</li>
+							<li>завантажити файл з будинками в форматі TAB</li>
+							<li>підключити підписи висот будинкам</li>
+							<li>встановити плагін MapInfo measure height</li>
+							<li>підключити шар з коефіцієнтами (видається супервайзером)</li>
+						</ul>
+					</div>
+					<div class="digit__step">
+						<span class="count">3</span>
+						<p class="step__title">Вимірювання висот будинків</p>
+						<p class="step__desc">
+							Виконати вимірювання висот будинків в Mapinfo
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrapper">
+			<div class="logo">
+				<a href="./main.html">
+					Ardigeo
+				</a>
+			</div>
+			<p>© 2020 «Ardigeo production»</p>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>	
+</body>
+</html>

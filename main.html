@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ardigeo</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/digitizing.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./img/faviconExample.png" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<a href="./main.html">
+					Ardigeo
+				</a>
+			</div>
+			<div class="menu__toggler">
+				<span></span>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="./main.html" class="current__item">Оцифровка карт</a></li>
+						<li><a href="./buildings.html">Оцифровка будинків</a></li>
+						<li><a href="#">Приклади робіт</a></li>
+						<li><a href="./about.html">Про нас</a></li>
+					</ul>
+				</nav>
+				<div class="theme__toggler">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+					<span>Dark</span>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<main>
+		<section class="digitizing__section">
+			<div class="wrapper">
+				<div class="digit__text">
+					<h1>Картографічна оцифровка</h1>
+					<p>Картографічна оцифровка - це технологія, що дозволяє моделювати навколишню місцевість за допомогою спеціальних технічних засобів і комп'ютерних програм. </p>
+					<p>Інформаційні технології дають можливість створювати електронні аналоги топографічних, авіаційних, геологічних, навігаційних, кадастрових та інших видів карт. </p>
+					<p>Оцифровані дані про навколишній простір використовуються для створення автоматизованих картографічних та геоінформаційних систем.</p>
+				</div>
+				<div class="digit__img">
+					<img src="img/map.jpg" alt="">
+				</div>
+			</div>
+			
+		</section>
+		<section class="digit__order">
+			<div class="wrapper">
+				<div class="section__title"><h2>Порядок виконання робіт з оцифровки карт</h2></div>
+				<div class="digit__steps">
+					<div class="digit__step">
+						<span class="count">1</span>
+						<p class="step__title">Створення проекту в ArcGis</p>
+
+						<p class="step__desc">
+							Завантаження космічного знімку BruTail та шейп-файлу з будинками.
+							
+
+						</p>
+					</div>
+					<div class="digit__step">
+						<span class="count">2</span>
+						<p class="step__title">Налаштування середовища</p>
+						<p class="step__desc">
+							Налаштування snapping, прямих кутів та гарячих клавіш
+						</p>
+					</div>
+					<div class="digit__step">
+						<span class="count">3</span>
+						<p class="step__title">Оцифровка-корекція будинків</p>
+						<p class="step__desc">
+							Робота з панелями Editor та Advanced Editing
+
+						</p>
+					</div>
+					<div class="digit__step">
+						<span class="count">4</span>
+						<p class="step__title">Надання всім новим будинкам базового значення 3 метра.</p>
+						<p class="step__desc">
+							Автоматична заміна значення “0” на “3” в полі heidht_fin(al) 
+						</p>
+					</div>
+					<div class="digit__step">
+						<span class="count">5</span>
+						<p class="step__title">Топологічна перевірка шару з будинками.</p>
+						<p class="step__desc">
+							Перевірка на накладання споруд, некоректність форм, відсутність достатньої генералізації.
+						</p>
+					</div>
+					<div class="digit__step">
+						<span class="count">6</span>
+						<p class="step__title">Передача роботи на перевірку</p>
+						<p class="step__desc">
+							Шар передається в форматі TAB, архівом супервайзеру.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrapper">
+			<div class="logo">
+				<a href="./main.html">
+					Ardigeo
+				</a>
+			</div>
+			<p>© 2020 «Ardigeo production»</p>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>	
+</body>
+</html>

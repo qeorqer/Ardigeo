@@ -1,0 +1,36 @@
+.about__us{
+	padding-top: 64px;
+	height: calc(100vh - 82px);
+	background:url(../img/hackers.jpg);
+	height: 800px;
+	background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 64px;
+    display: flex;
+    font-weight: wrap;
+    align-items: center;
+}
+.about__text{
+	color:#fff;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.about__text h1{
+	font-size: 50px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.about__text h1:after{
+	    content: "";
+    height: 2px;
+    width: 45px;
+    background: var(--hover-color);
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+}
+.about__text p{
+	margin: 15px 0;
+	font-weight: bold;
+}
